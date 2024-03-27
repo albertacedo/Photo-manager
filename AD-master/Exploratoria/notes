@@ -1,0 +1,42 @@
+https://blog.payara.fish/securing-payara-server-with-custom-ssl-certificate
+
+PREPARACIÓN:
+La pass por defecto de payara es "changeit" y es insegura,
+para cambiarla se debe ejecutar el binario bin/asadmin de la carpeta
+del servidor de payara creada por netbeans.
+Dentro del teminal:
+change-master-password --savemasterpassword=true payaradomain
+exit
+
+Cambiar la contraseña de payara también cambiará la contraseña de los
+keystore de payara.
+Es muy importante que las contraseñas del certificado, keystore y payara coinciden. Nosotros usamos "lemonade"
+
+Creación de los certificados (ojo la pass)
+openssl req -x509 -newkey rsa:4096 -keyout mycert.key -out mycert.crt -days 365
+
+Se copian en la config de payara por comodidad
+cp mycert.crt Payara_4.1.2.181/glassfish/domains/payaradomain/config/
+cp mycert.key Payara_4.1.2.181/glassfish/domains/payaradomain/config/
+
+El resto de comandos asumirán que se ejecutan en el dir de config:
+cd Payara_4.1.2.181/glassfish/domains/payaradomain/config/
+
+Creación del keystore (ojo la pass)
+openssl pkcs12 -export -in mycert.crt -inkey mycert.key -out mycert.p12 -name custom_certificate
+El alias elegido para los certificados en la keystore es "custom_certificate". El comando crea un nuevo keystore en mycert.p12
+
+Se pueden ver los contenidos de la keystore, aparecera nuestro alias con los certificados asociados:
+keytool -list -keystore mycert.p12
+
+Se junta el keystore de payara con el keystore que acabamos de crear, (se puede entender como fusionar dos diccionarios donde las llaves són alias y los valores són certificados.)
+keytool -importkeystore -destkeystore keystore.jks -srckeystore mycert.p12 -srcstoretype PKCS12 -alias custom_certificate
+
+Se añade la clave pública a los certificados trusted
+keytool -importcert -trustcacerts -destkeystore cacerts.jks -file mycert.crt -alias custom_certificate
+
+Para borrar un certificado (por que va a caducar por ejemplo)
+keytool -delete -alias custom_certificate -keystore keystore.jks
+keytool -delete -trustcacerts -alias custom_certificate -keystore cacerts.jks
+
+Se inicia el servidor, se accede a la config (localhost:4848) y se coloca el alias "custom_certificate" en el http listener (pestaña ssl)

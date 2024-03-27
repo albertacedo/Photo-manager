@@ -1,0 +1,22 @@
+/* AUTOMATICALLY GENERATED ON Sun Dec 19 19:11:47 CET 2021*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "eliminarImagen", "**";
+  permission javax.security.jacc.WebRoleRefPermission "image_loader", "**";
+  permission javax.security.jacc.WebRoleRefPermission "registrarImagen", "**";
+  permission javax.security.jacc.WebRoleRefPermission "login", "**";
+  permission javax.security.jacc.WebRoleRefPermission "register", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "modificarImagen", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ad.practica05_client_rest_servlet.JAXRSConfiguration", "**";
+  permission javax.security.jacc.WebRoleRefPermission "buscar", "**";
+};
+

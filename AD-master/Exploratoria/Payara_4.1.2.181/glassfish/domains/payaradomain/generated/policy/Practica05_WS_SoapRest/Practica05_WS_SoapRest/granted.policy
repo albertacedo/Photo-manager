@@ -1,0 +1,16 @@
+/* AUTOMATICALLY GENERATED ON Sun Dec 19 19:57:47 CET 2021*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ad.practica05_ws_soaprest.JAXRSConfiguration", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Soap", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

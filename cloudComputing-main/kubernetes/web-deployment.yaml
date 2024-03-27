@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: web
+        image: gcr.io/testkubernetes-370119/web:v0.0.2 # update
+     
+        env:
+        - name: NODE_ENV
+          value: "development"
+        - name: PORT
+          value: "5000"
+        
+      restartPolicy: Always
+      

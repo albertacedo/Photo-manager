@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: web
+        image: gcr.io/clo-comp-two/web:latest # update
+     
+        env:
+        - name: ENV_VAR_TRANSCRODE_SERVER
+          value: "http://34.76.212.17:3000"
+        
+      restartPolicy: Always
+      

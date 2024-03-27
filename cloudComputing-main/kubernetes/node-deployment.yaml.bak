@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node
+  labels:
+    name: node
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      volumes:
+      - name: nfs-volume
+        persistentVolumeClaim:
+          claimName: nfs-pvc
+      containers:
+      - name: node
+        image: gcr.io/testkubernetes-370119/node-kubernetes:v0.0.53 # upda
+        volumeMounts:
+        - name: nfs-volume
+          mountPath: /tmp
+        env:
+        - name: NODE_ENV
+          value: "development"
+        - name: PORT
+          value: "3000"
+        livenessProbe:
+            httpGet:
+                path: /healthz
+                port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 3
+      restartPolicy: Always
+      

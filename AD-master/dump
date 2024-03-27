@@ -1,0 +1,1067 @@
+18:28:39.299619 IP localhost.39022 > localhost.appserv-http: Flags [F.], seq 397413740, ack 3596497184, win 512, options [nop,nop,TS val 3593224450 ecr 3593218534], length 0
+E..47.@.@............n.....l.^1 .....(.....
+.,A..,).
+18:28:39.300199 IP localhost.appserv-http > localhost.39022: Flags [F.], seq 1, ack 1, win 512, options [nop,nop,TS val 3593224451 ecr 3593224450], length 0
+E..4..@.@.F$...........n.^1 ...m.....(.....
+.,A..,A.
+18:28:39.300223 IP localhost.39022 > localhost.appserv-http: Flags [.], ack 2, win 512, options [nop,nop,TS val 3593224451 ecr 3593224451], length 0
+E..47/@.@............n.....m.^1!.....(.....
+.,A..,A.
+18:28:39.395422 IP localhost.39026 > localhost.appserv-http: Flags [S], seq 1069884578, win 65495, options [mss 65495,sackOK,TS val 3593224546 ecr 0,nop,wscale 7], length 0
+E..<..@.@............r..?.$..........0.........
+.,Ab........
+18:28:39.395433 IP localhost.appserv-http > localhost.39026: Flags [S.], seq 4128816525, ack 1069884579, win 65483, options [mss 65495,sackOK,TS val 3593224546 ecr 3593224546,nop,wscale 7], length 0
+E..<..@.@.<............r....?.$......0.........
+.,Ab.,Ab....
+18:28:39.395440 IP localhost.39026 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593224546 ecr 3593224546], length 0
+E..4..@.@............r..?.$..........(.....
+.,Ab.,Ab
+18:28:39.395502 IP localhost.39026 > localhost.appserv-http: Flags [P.], seq 1:17, ack 1, win 512, options [nop,nop,TS val 3593224546 ecr 3593224546], length 16
+E..D..@.@............r..?.$..........8.....
+.,Ab.,AbGET / HTTP/1.0
+
+
+18:28:39.395506 IP localhost.appserv-http > localhost.39026: Flags [.], ack 17, win 512, options [nop,nop,TS val 3593224546 ecr 3593224546], length 0
+E..4k.@.@..............r....?.$......(.....
+.,Ab.,Ab
+18:28:39.399233 IP localhost.39028 > localhost.appserv-http: Flags [S], seq 2461665287, win 65495, options [mss 65495,sackOK,TS val 3593224550 ecr 0,nop,wscale 7], length 0
+E..<R.@.@............t...............0.........
+.,Af........
+18:28:39.399249 IP localhost.appserv-http > localhost.39028: Flags [S.], seq 4152346339, ack 2461665288, win 65483, options [mss 65495,sackOK,TS val 3593224550 ecr 3593224550,nop,wscale 7], length 0
+E..<..@.@.<............t.............0.........
+.,Af.,Af....
+18:28:39.399260 IP localhost.39028 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593224550 ecr 3593224550], length 0
+E..4R.@.@............t...............(.....
+.,Af.,Af
+18:28:39.399378 IP localhost.39028 > localhost.appserv-http: Flags [P.], seq 1:285, ack 1, win 512, options [nop,nop,TS val 3593224550 ecr 3593224550], length 284
+E..PR.@.@............t...............D.....
+.,Af.,AfGET /management/domain/anonymous-user-enabled HTTP/1.1
+Accept: application/json
+Cookie: $Version=1;gfresttoken=
+X-GlassFish-3: true
+User-Agent: Jersey/2.25.1 (HttpUrlConnection 1.8.0_292)
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Connection: keep-alive
+
+
+18:28:39.399385 IP localhost.appserv-http > localhost.39028: Flags [.], ack 285, win 510, options [nop,nop,TS val 3593224550 ecr 3593224550], length 0
+E..4..@.@..6...........t......	$.....(.....
+.,Af.,Af
+18:28:39.404052 IP localhost.appserv-http > localhost.39028: Flags [P.], seq 1:571, ack 285, win 512, options [nop,nop,TS val 3593224555 ecr 3593224550], length 570
+E..n..@.@..............t......	$.....c.....
+.,Ak.,AfHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:39 GMT
+Content-Length: 270
+X-Frame-Options: SAMEORIGIN
+
+{"message":"The anonymous user is enabled: admin","command":"__anonymous-user-enabled AdminCommand","exit_code":"SUCCESS","extraProperties":{"anonymousUserEnabled":true,"methods":[{"name":"GET"},{}],"anonymousUserName":"admin","commandLog":["__anonymous-user-enabled"]}}
+18:28:39.404069 IP localhost.39028 > localhost.appserv-http: Flags [.], ack 571, win 508, options [nop,nop,TS val 3593224555 ecr 3593224555], length 0
+E..4R.@.@............t....	$.........(.....
+.,Ak.,Ak
+18:28:39.413571 IP localhost.appserv-http > localhost.39026: Flags [P.], seq 1:4915, ack 17, win 512, options [nop,nop,TS val 3593224564 ecr 3593224546], length 4914
+E..fk.@.@..............r....?.$......[.....
+.,At.,AbHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Set-Cookie: JSESSIONID=e96a6e44cef9c53768331102ffdd; Path=/; HttpOnly
+Content-Type: text/html;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:39 GMT
+Connection: close
+X-Frame-Options: SAMEORIGIN
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Login</title>
+<script type="text/javascript">
+<!-- FIXME: add code to ensure we're the top-most frame -->
+    if (document.getElementById('layout-doc') != null) {
+        // Just refresh the page... login will take over
+        window.location = window.location;
+    }
+</script>
+    <style type="text/css">
+        /* clickjacking defense */
+        body { display : none; }
+    </style>
+<link rel="stylesheet" type="text/css" href="/theme/com/sun/webui/jsf/suntheme/css/css_master.css" />
+<script type="text/javascript">
+djConfig={
+    "isDebug": false,
+    "debugAtAllCosts": false,
+    "parseWidgets": false
+};
+</script>
+<script type="text/javascript" src="/theme/META-INF/dojo/dojo.js"></script>
+<script type="text/javascript" src="/theme/META-INF/json/json.js"></script>
+<script type="text/javascript" src="/theme/META-INF/prototype/prototype.js"></script>
+<script type="text/javascript" src="/theme/META-INF/com_sun_faces_ajax.js"></script>
+<script type="text/javascript">
+dojo.hostenv.setModulePrefix("webui.suntheme", "/theme/com/sun/webui/jsf/suntheme/javascript");
+dojo.require('webui.suntheme.*');
+</script>
+<link id="sun_link5" rel="stylesheet" type="text/css" href="/resource/css/css_ns6up.css" />
+
+</head>
+
+<body id="body3" class="LogBdy" focus="loginform.j_username" style="background-color: #4A5C6A;">
+    <div id="header"class="LogTopBnd" style="height: 30px;"></div>
+    <div class="middle">
+        <div class="plugincontent" style="width1: 1px; visibility: hidden;">
+
+<div style="height: 435px;background: #ffffff url(/resource/community-theme/images/login-backimage-open.png);
+    background-repeat:no-repeat;background-position:left top; width: 720px; margin: auto; margin: auto; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;">
+    <div style="width: 460px; padding-top: 160px; margin-left: 310px;">
+<img id="sun_image11" src="/resource/community-theme/images/login-product_name_open.png;jsessionid=e96a6e44cef9c53768331102ffdd" alt="Payara Server Open Source Edition" height="42" width="329" border="0" />
+        <form method="POST" class="form" name="loginform" action="j_security_check">
+        <table role="presentation">
+        <tr>
+            <td><label for="Login.username" style="font-weight: bold;">User Name:</label></td>
+            <td><input type="text" name="j_username" id="Login.username" tabindex="1" value="admin"></td>
+        </tr>
+        <tr>
+            <td><label for="Login.password" style="font-weight: bold;">Password:</label>
+            <td><input type="password" name="j_password" id="Login.password" tabindex="2">
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" class="Btn1"
+                    value="Login"
+                    title="Log In to Payara Administration Console" tabindex="3"
+                    onmouseover="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    onmouseout="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onblur="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onfocus="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    name="loginButton" id="loginButton">
+        	    <input type="hidden" name="loginButton.DisabledHiddenField" value="true" />
+    	    </td>
+	    </tr>
+	    </table>
+        </form>
+    </div>
+</div>
+
+            <script type="text/javascript">
+                if (true) {
+                    //submitAndDisable(document.getElementById('loginButton'), 'Login');
+                    document.getElementById('loginButton').form.submit();
+                    //document.getElementById('loginButton').form.autocomplete="off";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="footer"
+        style="color: #fff;">
+        <div id="copyright" style="width: 720px; margin-left: auto; margin-right: auto; padding: 5px; text-align: center">
+            <span>Copyright .. 2005, 2014, Oracle and/or its affiliates. Payara Portions Copyright .. 2016 Payara Foundation. All rights reserved. Payara and Payara Server are trademarks of Payara Foundation.  Oracle and Java are registered trademarks of Oracle and/or its  affiliates. Other names may be trademarks of their respective owners.</span>
+        </div>
+    </div>
+    <script src="/resource/js/cj.js"></script>
+</body>
+</html>
+
+18:28:39.413591 IP localhost.39026 > localhost.appserv-http: Flags [.], ack 4915, win 488, options [nop,nop,TS val 3593224564 ecr 3593224564], length 0
+E..4..@.@............r..?.$..........(.....
+.,At.,At
+18:28:39.413641 IP localhost.39026 > localhost.appserv-http: Flags [R.], seq 17, ack 4915, win 512, options [nop,nop,TS val 3593224564 ecr 3593224564], length 0
+E..4..@.@............r..?.$..........(.....
+.,At.,At
+18:28:39.413853 IP localhost.39024 > localhost.appserv-http: Flags [F.], seq 3603251872, ack 3378866956, win 512, options [nop,nop,TS val 3593224564 ecr 3593218545], length 0
+E..47.@.@............p....B..ek......(.....
+.,At.,).
+18:28:39.414058 IP localhost.appserv-http > localhost.39024: Flags [F.], seq 1, ack 1, win 512, options [nop,nop,TS val 3593224565 ecr 3593224564], length 0
+E..4..@.@.l............p.ek...B......(.....
+.,Au.,At
+18:28:39.414074 IP localhost.39024 > localhost.appserv-http: Flags [.], ack 2, win 512, options [nop,nop,TS val 3593224565 ecr 3593224565], length 0
+E..47.@.@............p....B..ek......(.....
+.,Au.,Au
+18:28:39.414190 IP localhost.39030 > localhost.appserv-http: Flags [S], seq 2957016277, win 65495, options [mss 65495,sackOK,TS val 3593224565 ecr 0,nop,wscale 7], length 0
+E..<|C@.@..v.........v...@|..........0.........
+.,Au........
+18:28:39.414201 IP localhost.appserv-http > localhost.39030: Flags [S.], seq 4283157932, ack 2957016278, win 65483, options [mss 65495,sackOK,TS val 3593224565 ecr 3593224565,nop,wscale 7], length 0
+E..<..@.@.<............v.K...@|......0.........
+.,Au.,Au....
+18:28:39.414209 IP localhost.39030 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593224565 ecr 3593224565], length 0
+E..4|D@.@..}.........v...@|..K.......(.....
+.,Au.,Au
+18:28:39.414359 IP localhost.39030 > localhost.appserv-http: Flags [P.], seq 1:239, ack 1, win 512, options [nop,nop,TS val 3593224565 ecr 3593224565], length 238
+E.."|E@.@............v...@|..K.............
+.,Au.,AuGET /__asadmin/__locations HTTP/1.1
+Content-Type: image/png
+User-Agent: hk2-agent
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+
+
+18:28:39.414364 IP localhost.appserv-http > localhost.39030: Flags [.], ack 239, win 510, options [nop,nop,TS val 3593224565 ecr 3593224565], length 0
+E..46#@.@..............v.K...@}......(.....
+.,Au.,Au
+18:28:39.416390 IP localhost.appserv-http > localhost.39030: Flags [P.], seq 1:1316, ack 239, win 512, options [nop,nop,TS val 3593224567 ecr 3593224565], length 1315
+E..W6$@.@..{...........v.K...@}......L.....
+.,Aw.,AuHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: text/html
+Date: Sat, 18 Dec 2021 17:28:39 GMT
+Transfer-Encoding: chunked
+X-Frame-Options: SAMEORIGIN
+
+3fe
+Signature-Version: 1.0
+Restart-Required_value: false
+Base-Root_name: Base-Root
+use-main-children-attribute: false
+Restart-Required_name: Restart-Required
+keys: Config-Dir;Instance-Root;Domain-Root;Uptime;Base-Root;Restart-Re
+ quired;Pid
+Config-Dir_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/P
+ ayara_4.1.2.181/glassfish/domains/payaradomain/config
+Domain-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/
+ Payara_4.1.2.181/glassfish/domains/payaradomain
+exit-code: SUCCESS
+message: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Payara_4.1
+ .2.181/glassfish/domains/payaradomain
+Uptime_value: 208748
+Instance-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratori
+ a/Payara_4.1.2.181/glassfish/domains/payaradomain
+Uptime_name: Uptime
+Instance-Root_name: Instance-Root
+Domain-Root_name: Domain-Root
+Pid_value: 42249
+Pid_name: Pid
+Base-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Pa
+ yara_4.1.2.181/glassfish
+Config-Dir_name: Config-Dir
+
+
+
+18:28:39.416404 IP localhost.39030 > localhost.appserv-http: Flags [.], ack 1316, win 502, options [nop,nop,TS val 3593224567 ecr 3593224567], length 0
+E..4|F@.@..{.........v...@}..K.......(.....
+.,Aw.,Aw
+18:28:39.416512 IP localhost.appserv-http > localhost.39030: Flags [P.], seq 1316:1321, ack 239, win 512, options [nop,nop,TS val 3593224567 ecr 3593224567], length 5
+E..96%@.@..............v.K...@}......-.....
+.,Aw.,Aw0
+
+
+18:28:39.416515 IP localhost.39030 > localhost.appserv-http: Flags [.], ack 1321, win 507, options [nop,nop,TS val 3593224567 ecr 3593224567], length 0
+E..4|G@.@..z.........v...@}..K.......(.....
+.,Aw.,Aw
+18:28:40.670913 IP localhost.36118 > localhost.intermapper: Flags [S], seq 3530213243, win 65495, options [mss 65495,sackOK,TS val 3593225821 ecr 0,nop,wscale 7], length 0
+E..<.u@.@.,E.............j.{.........0.........
+.,F]........
+18:28:40.670923 IP localhost.intermapper > localhost.36118: Flags [S.], seq 1516513352, ack 3530213244, win 65483, options [mss 65495,sackOK,TS val 3593225821 ecr 3593225821,nop,wscale 7], length 0
+E..<..@.@.<.............Zd(H.j.|.....0.........
+.,F].,F]....
+18:28:40.670931 IP localhost.36118 > localhost.intermapper: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593225821 ecr 3593225821], length 0
+E..4.v@.@.,L.............j.|Zd(I.....(.....
+.,F].,F]
+18:28:40.672331 IP localhost.36118 > localhost.intermapper: Flags [P.], seq 1:518, ack 1, win 512, options [nop,nop,TS val 3593225823 ecr 3593225821], length 517
+E..9.w@.@.*F.............j.|Zd(I...........
+.,F_.,F].............9..o..Ji ....QX..I&
+..V..g.r.. ".@.{..8.....F.n.v.Pv.%......jg..$.......+./.....,.0.
+.	........./.5.
+............	localhost..........
+.......................#.........h2.http/1.1..........".
+...........3.k.i... ....e.U..2.m...KA......P.{..g.9E...A.s..._T.....c.N.j....bE4..o..)R.}tM.c...-.j.xd.'..87.]..P..$..Mb..+.	......................................-........@............................................................................................................................................
+18:28:40.672338 IP localhost.intermapper > localhost.36118: Flags [.], ack 518, win 508, options [nop,nop,TS val 3593225823 ecr 3593225823], length 0
+E..4.F@.@.A{............Zd(I.j.......(.....
+.,F_.,F_
+18:28:40.678548 IP localhost.intermapper > localhost.36118: Flags [P.], seq 1:1367, ack 518, win 512, options [nop,nop,TS val 3593225829 ecr 3593225823], length 1366
+E....G@.@.<$............Zd(I.j.............
+.,Fe.,F_....Q...Q..*I%..\...\II$..._?..........kG.. ...G.....V.IF......Xl....F.LO.&../..	...................0...0..........R..c0..	*.H........0.1.0	..U....UK1.0...U....Worcestershire1.0...U....Great Malvern1.0...U.
+..Payara Foundation1.0...U....Payara1.0...U...	localhost0...180206132649Z..280204132649Z0.1.0	..U....UK1.0...U....Worcestershire1.0...U....Great Malvern1.0...U.
+..Payara Foundation1.0...U....Payara1.0...U...	localhost0.."0..	*.H.............0..
+......[..hm...B........kaN.s>..x]..e..6]...../gu.,.lOsR.;...2...<.%....y.....F3.W..U././.d).NP..t..[.+.Q..dI.l.c.....o.....Z..3.=....l.."...W..K.........M..j6C.J......#..>I.j...Hk.75..q3$l..KUuw+..G.&..".....b=)....e....F.u..*.%....P^a..0.&\....!~.....(?.V.G2........!0.0...U......~ ...n..+....>.....+0..	*.H.............'....Q...Zv.aI..G.0.... 1...?......A...q... .F].+......1.t..  ...@..u...7y...p.....P.@x..,.4.9.U..}.....Z......K\&I.....; .id......n2..:1....?....... ..|F].H..Q.....>7.u..48w:......|...Nq.......o..K.....X...8..NU...z...>./l_!i<...7%...uws.K.4..$..w.^.........I...A..Ko.<...D.U..W.....F...~..x.N.z..3p....Rt...K..}z.9.D..sa..e...B....o..k..Kt..6.X.....TX..*.O6...1.>.>........+.&...b.Q.[ZR)............k..mJ.#.Q~.....T..-.S...._...#b.......t.z.j.*.c>.:..B[[...w...0.:..#~Fs..|	..\.......SzP.Z.<.../...F....m........{.i.9c.."}D.;\.k..v...tb....:~T.+.j..}....*. .6m\.Rz#.K^W....,m.{K.BN..........
+18:28:40.678556 IP localhost.36118 > localhost.intermapper: Flags [.], ack 1367, win 502, options [nop,nop,TS val 3593225829 ecr 3593225829], length 0
+E..4.x@.@.,J.............j..Zd-......(.....
+.,Fe.,Fe
+18:28:40.680944 IP localhost.36118 > localhost.intermapper: Flags [P.], seq 518:644, ack 1367, win 512, options [nop,nop,TS val 3593225831 ecr 3593225829], length 126
+E....y@.@.+..............j..Zd-............
+.,Fg.,Fe....F...BA..l~.r>,...Z...:..3....(Jd.,Rr..f	*..3.%.....ac.u.-....(&4/e9&.............(........$O1.?xB.NLL...S.....g	..v4.u.
+..
+18:28:40.680953 IP localhost.intermapper > localhost.36118: Flags [.], ack 644, win 512, options [nop,nop,TS val 3593225831 ecr 3593225831], length 0
+E..4.H@.@.Ay............Zd-..j.......(.....
+.,Fg.,Fg
+18:28:40.685465 IP localhost.intermapper > localhost.36118: Flags [P.], seq 1367:1418, ack 644, win 512, options [nop,nop,TS val 3593225836 ecr 3593225831], length 51
+E..g.I@.@.AE............Zd-..j.......[.....
+.,Fl.,Fg..........(.........;....4=...,.w..c.t.zF.f9.t..;..
+18:28:40.685472 IP localhost.36118 > localhost.intermapper: Flags [.], ack 1418, win 512, options [nop,nop,TS val 3593225836 ecr 3593225836], length 0
+E..4.z@.@.,H.............j..Zd-......(.....
+.,Fl.,Fl
+18:28:40.685572 IP localhost.36118 > localhost.intermapper: Flags [P.], seq 644:1417, ack 1418, win 512, options [nop,nop,TS val 3593225836 ecr 3593225836], length 773
+E..9.{@.@.)B.............j..Zd-............
+.,Fl.,Fl.............7....W....%[. ....@.+.hz1v......,.>7....f.3'%D.q4.Z.e...+.......A..
+.......;c...uh.......uP,....R.v..(...+....YDv._.P..~....T.....>....V...~\...NZ..L~^.....:...,.$.,@.....f.%.Uv/ED'c...\|."QE...]....[....#;p...../. :.z.K.8...c[.vf`.3.....V_..;.I.$....L......Z....y...u..KLU.)<.lf~."+&h..Z>.#2..y.w.....i`	;..'.0..N.`.C....PO.bt|...k3.$.....Z.+....O.N...Y...87..*..F!.......W.fJ+U..O.k^H.#....R.f.	l.u..2....[...J..*...3)._....r.^4\......~_7 ....A3 .J...Z".x!m....{:..$...t...}...../.\.0.pF,)g.........N.....t^o..g.h......	......*..0.V!.^......!`....?z........|.3.AXbn-...R'.".Z.f...EM.....v..............3%.......:w...s..Xs5_.=.H=.r..*_.i~._S......CrBbh.- ..P@w^.v..|0~....fC.)P.X.-
+^.......),L.I.?"f...$..x..t(.>G..u..k.O2.rc*f.-.p.8.._..I..gA...m..v....t..1.
+18:28:40.685579 IP localhost.intermapper > localhost.36118: Flags [.], ack 1417, win 506, options [nop,nop,TS val 3593225836 ecr 3593225836], length 0
+E..4.J@.@.Aw............Zd-..j.......(.....
+.,Fl.,Fl
+18:28:40.687882 IP localhost.intermapper > localhost.36118: Flags [P.], seq 1418:2974, ack 1417, win 512, options [nop,nop,TS val 3593225838 ecr 3593225836], length 1556
+E..H.K@.@.;b............Zd-..j.......=.....
+.,Fn.,Fl..............[C....z>..I"..[.1..r'....1&..j.....k..C.'..QIv...j...................+RC[...JF.
+.L............e..=)...7...$ce...^U..!.....Vc....t9_P.?._.q..
+O.....c.?%.P.....HE..6."U.P...Q........p.........
+7...Ks*...J...$...2.....L.......zL..../X.V...P..x..........7..j...
+..X..6.w..K.J.}!...K..-X.j...}*.....dc...u.%.....U.	@.n2..]I.........h....9.....5T............J....6.....5..A._.Q:.O.t..L...$.q....../m.....K...}..zZ.o.-).......g.....F..q.MR..!..=..A*1!B@gNm%...R..n......4.......MX....=...^..h}:m.W..P...]..t...(...]......L2.6SN..]S...w>.....y.k...6'(..	5H.C+~......#....&.G.?.XK~	."....U'...0hI.....aGKZ....(.bQ....&hZ.s..dJ....P.............w'E..(5..61w.
+/Hl&.CD.J....Hd..N.....G.Z.u.%..K.a.....t...a*.....;.....:.r...... W.....r...U...].}....'7../8[.
+............"r..^....h...5*.....Z..2zK...L.=............._.W...5..v$.TF....-..(...[r+B..,..oV ......0h....X.i..Py...k..AI.`.re..|..f...5.....C.?g|*....\......C..........b.....(..\L...2...../.......5...g@...~H....2.i....Ts...$.....8.:...w.3....J..(CE....CCt.; u../...m....6.^.M.....0...D..W...; ...}.}.$..R.T0...][%...............{..{H.R....[..O^....K...7."G..k6.\}+....-J.i8n(....3..qZ .0eH.....Ay`.\=..lw.5..-5..qq.s.4....V......R/..a...."...m(o..x..C............ fw.N...0..._a...^T.>9t.m.CC.c..t....z0!.8m...o....c...@....xd.....%.a.)o.....pl5%G^.....[..:..$.[&.y?........Z3.+....'f...5.*.hD....
+......f".8...yU.Z.]..>y;.po.i.....X......L...c......F...`.s._....AM..h.C..W..........s........[.q/..f5.~.AoV..<'fR..p.j[.....r!Ao...(...f.A...@....QV?..G..6q...{..&....:.f..r..Y*....O....`....Jp....
+18:28:40.687896 IP localhost.36118 > localhost.intermapper: Flags [.], ack 2974, win 501, options [nop,nop,TS val 3593225838 ecr 3593225838], length 0
+E..4.|@.@.,F.............j..Zd3......(.....
+.,Fn.,Fn
+18:28:40.718413 IP localhost.36118 > localhost.intermapper: Flags [P.], seq 1417:2010, ack 2974, win 512, options [nop,nop,TS val 3593225869 ecr 3593225838], length 593
+E....}@.@.)..............j..Zd3......z.....
+.,F..,Fn....L................y#...R.\v..[.h3M.L.
+.#..Y.A.N.)....@%.HvZ.q.7G.]]).k..,.Id.I.?.......H..y..;P.2.q.V...>.W...H..P$..|J.O...7...W.l?:...1.4d.8.ht....)._...S..h.k....4....\.......nL...e.....R`=G....7.....D.....|..tq.".%...jJ.K......60.E..;-..t..Kh...A......IO..G.&..L.....>.....x.."... .
+.V.....niPY.X7....x..0....m.`?C.......8.. ....4........a....Q#l..\_.b.....<.-......y...D.H..e..h.......v.~...,.....AseM6lW....lJ.../..d.	X..O..
+DF.v...o.<...CV...Y...~..`}d.Sf6.$D......X....#`$.......S....v....t}.aMA.t^.;..........~\.N..d.Z.....{................I....Q|.B<l..E.$.....:r...xs.>...*...J.4.
+18:28:40.718427 IP localhost.intermapper > localhost.36118: Flags [.], ack 2010, win 508, options [nop,nop,TS val 3593225869 ecr 3593225869], length 0
+E..4.L@.@.Au............Zd3..j.U.....(.....
+.,F..,F.
+18:28:40.718794 IP localhost.36118 > localhost.intermapper: Flags [P.], seq 2010:2041, ack 2974, win 512, options [nop,nop,TS val 3593225869 ecr 3593225869], length 31
+E..S.~@.@.,%.............j.UZd3......G.....
+.,F..,F.................).RQ..U	.......
+18:28:40.718801 IP localhost.intermapper > localhost.36118: Flags [.], ack 2041, win 508, options [nop,nop,TS val 3593225869 ecr 3593225869], length 0
+E..4.M@.@.At............Zd3..j.t.....(.....
+.,F..,F.
+18:28:40.718818 IP localhost.36118 > localhost.intermapper: Flags [F.], seq 2041, ack 2974, win 512, options [nop,nop,TS val 3593225869 ecr 3593225869], length 0
+E..4..@.@.,C.............j.tZd3......(.....
+.,F..,F.
+18:28:40.721341 IP localhost.intermapper > localhost.36118: Flags [P.], seq 2974:4380, ack 2042, win 508, options [nop,nop,TS val 3593225872 ecr 3593225869], length 1406
+E....N@.@.;.............Zd3..j.u...........
+.,F..,F.....y........R...K.Ku.Tk......#.....+..8......U...$.FK.y....1,...y..Q...-..6....i...L..J..`oh.0{..C1..,..zd.?.s)=...;.g.....hp..>..3...#..sD.&.%.Q@|....J..d...O....=~hS8|.9.../...k.4.#...G%.Q.....j..5OE...f..{.O?........<..a...}&....Q.F8d....x.l.. .C.l'.P..V...=.."a.#..i-;..;F....wX=^(.....(...h....f.....z....5g.a..I!8..]]....3.e...,...9sm.H.jT........~]K..Ga.....|...V...E.8.V[.p..<k..^x.....T.:.z..yrp.....R..I.Y.5.m.euqX@M.p.. ....<.....&q*1 .E...	..U..`..QU@..V.....z2.W..?...Z.....F.0./.}.,.....<a..8.H,.iM.{$....q...4.&...N.-)}yG.-@o+C.'.dw...z....../o.|...".x...{...|..a0.Yl?c....sMqp9...MT.......f...v......A.{.X.7. .......;8...,..... J...Y=....m.	j..PL_.
+...o.p..fAb.._#.)>.o9......1.Sy...<.<.....).Af:...)nuTc.....O....N......yH..O=X....q.S.yv%?....n..o.D%WyS..n.......}....Kk.c.a..wc...._...F...;.........V.?cew..t...D..4..LS}3&..[i6....yr...:.?n.n..Z...A36\.....
+`/.u...X..X..A.5...p8|;.."2O...@..HTb.A.. ..'..B.M%_.Hl..$.[....+.|..1...B....W=.Kl
+r_..O[............._.....E..j. @kv..0o..l{`K_.
+@.../f..q....W..>.........o...)m.\.T.p	n..D'..2....l..............K'..l..........E..8.AV..U<O5.!...hs5f......M\...bO.^*8..s......mX.^.(S4p".Ou.......,.C..p.	.a.Li......S..,^d.&U.....r.+.A..-.^z...p....4~/6.6%#.?...@.X3*c.S.%?.....+.W[GT.3,W*\....3kl.M.?j......o.A.....b..............z..f...k..x...	..T..~......n..`.0j#.o4C.<..c.-.A.Eq,.....6..%s...m....f..Ya.DK.HF.c.#.h
+.(.^.....R.VY^Cw.^.y.'.....
+18:28:40.721372 IP localhost.36118 > localhost.intermapper: Flags [R], seq 3530215285, win 0, length 0
+E..(..@.@.<..............j.u....P...b...
+18:28:45.417598 IP localhost.39032 > localhost.appserv-http: Flags [S], seq 4061259439, win 65495, options [mss 65495,sackOK,TS val 3593230568 ecr 0,nop,wscale 7], length 0
+E..<Iv@.@..C.........x...............0.........
+.,X.........
+18:28:45.417626 IP localhost.appserv-http > localhost.39032: Flags [S.], seq 1374076845, ack 4061259440, win 65483, options [mss 65495,sackOK,TS val 3593230568 ecr 3593230568,nop,wscale 7], length 0
+E..<..@.@.<............xQ............0.........
+.,X..,X.....
+18:28:45.417648 IP localhost.39032 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593230568 ecr 3593230568], length 0
+E..4Iw@.@..J.........x......Q........(.....
+.,X..,X.
+18:28:45.417795 IP localhost.39032 > localhost.appserv-http: Flags [P.], seq 1:17, ack 1, win 512, options [nop,nop,TS val 3593230568 ecr 3593230568], length 16
+E..DIx@.@..9.........x......Q........8.....
+.,X..,X.GET / HTTP/1.0
+
+
+18:28:45.417805 IP localhost.appserv-http > localhost.39032: Flags [.], ack 17, win 512, options [nop,nop,TS val 3593230568 ecr 3593230568], length 0
+E..4;.@.@..............xQ............(.....
+.,X..,X.
+18:28:45.424507 IP localhost.39028 > localhost.appserv-http: Flags [F.], seq 285, ack 571, win 512, options [nop,nop,TS val 3593230575 ecr 3593224555], length 0
+E..4R.@.@............t....	$.........(.....
+.,X..,Ak
+18:28:45.424648 IP localhost.39034 > localhost.appserv-http: Flags [S], seq 1716095432, win 65495, options [mss 65495,sackOK,TS val 3593230575 ecr 0,nop,wscale 7], length 0
+E..<..@.@............z..fI...........0.........
+.,X.........
+18:28:45.424662 IP localhost.appserv-http > localhost.39034: Flags [S.], seq 3806065211, ack 1716095433, win 65483, options [mss 65495,sackOK,TS val 3593230575 ecr 3593230575,nop,wscale 7], length 0
+E..<..@.@.<............z...;fI.......0.........
+.,X..,X.....
+18:28:45.424674 IP localhost.39034 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593230575 ecr 3593230575], length 0
+E..4..@.@.. .........z..fI.....<.....(.....
+.,X..,X.
+18:28:45.424866 IP localhost.39034 > localhost.appserv-http: Flags [P.], seq 1:285, ack 1, win 512, options [nop,nop,TS val 3593230575 ecr 3593230575], length 284
+E..P..@.@............z..fI.....<.....D.....
+.,X..,X.GET /management/domain/anonymous-user-enabled HTTP/1.1
+Accept: application/json
+Cookie: $Version=1;gfresttoken=
+X-GlassFish-3: true
+User-Agent: Jersey/2.25.1 (HttpUrlConnection 1.8.0_292)
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Connection: keep-alive
+
+
+18:28:45.424872 IP localhost.appserv-http > localhost.39034: Flags [.], ack 285, win 510, options [nop,nop,TS val 3593230575 ecr 3593230575], length 0
+E..4..@.@.:............z...<fI.......(.....
+.,X..,X.
+18:28:45.424921 IP localhost.appserv-http > localhost.39028: Flags [F.], seq 571, ack 286, win 512, options [nop,nop,TS val 3593230575 ecr 3593230575], length 0
+E..4..@.@..4...........t......	%.....(.....
+.,X..,X.
+18:28:45.424933 IP localhost.39028 > localhost.appserv-http: Flags [.], ack 572, win 512, options [nop,nop,TS val 3593230575 ecr 3593230575], length 0
+E..4R.@.@............t....	%.........(.....
+.,X..,X.
+18:28:45.428549 IP localhost.appserv-http > localhost.39034: Flags [P.], seq 1:571, ack 285, win 512, options [nop,nop,TS val 3593230579 ecr 3593230575], length 570
+E..n..@.@.7............z...<fI.......c.....
+.,X..,X.HTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:45 GMT
+Content-Length: 270
+X-Frame-Options: SAMEORIGIN
+
+{"message":"The anonymous user is enabled: admin","command":"__anonymous-user-enabled AdminCommand","exit_code":"SUCCESS","extraProperties":{"anonymousUserEnabled":true,"methods":[{"name":"GET"},{}],"anonymousUserName":"admin","commandLog":["__anonymous-user-enabled"]}}
+18:28:45.428563 IP localhost.39034 > localhost.appserv-http: Flags [.], ack 571, win 508, options [nop,nop,TS val 3593230579 ecr 3593230579], length 0
+E..4..@.@............z..fI.....v.....(.....
+.,X..,X.
+18:28:45.435995 IP localhost.appserv-http > localhost.39032: Flags [P.], seq 1:4915, ack 17, win 512, options [nop,nop,TS val 3593230587 ecr 3593230568], length 4914
+E..f;.@.@..............xQ............[.....
+.,X..,X.HTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Set-Cookie: JSESSIONID=e96be6ba9f77905f8e0b4e7df1b8; Path=/; HttpOnly
+Content-Type: text/html;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:45 GMT
+Connection: close
+X-Frame-Options: SAMEORIGIN
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Login</title>
+<script type="text/javascript">
+<!-- FIXME: add code to ensure we're the top-most frame -->
+    if (document.getElementById('layout-doc') != null) {
+        // Just refresh the page... login will take over
+        window.location = window.location;
+    }
+</script>
+    <style type="text/css">
+        /* clickjacking defense */
+        body { display : none; }
+    </style>
+<link rel="stylesheet" type="text/css" href="/theme/com/sun/webui/jsf/suntheme/css/css_master.css" />
+<script type="text/javascript">
+djConfig={
+    "isDebug": false,
+    "debugAtAllCosts": false,
+    "parseWidgets": false
+};
+</script>
+<script type="text/javascript" src="/theme/META-INF/dojo/dojo.js"></script>
+<script type="text/javascript" src="/theme/META-INF/json/json.js"></script>
+<script type="text/javascript" src="/theme/META-INF/prototype/prototype.js"></script>
+<script type="text/javascript" src="/theme/META-INF/com_sun_faces_ajax.js"></script>
+<script type="text/javascript">
+dojo.hostenv.setModulePrefix("webui.suntheme", "/theme/com/sun/webui/jsf/suntheme/javascript");
+dojo.require('webui.suntheme.*');
+</script>
+<link id="sun_link5" rel="stylesheet" type="text/css" href="/resource/css/css_ns6up.css" />
+
+</head>
+
+<body id="body3" class="LogBdy" focus="loginform.j_username" style="background-color: #4A5C6A;">
+    <div id="header"class="LogTopBnd" style="height: 30px;"></div>
+    <div class="middle">
+        <div class="plugincontent" style="width1: 1px; visibility: hidden;">
+
+<div style="height: 435px;background: #ffffff url(/resource/community-theme/images/login-backimage-open.png);
+    background-repeat:no-repeat;background-position:left top; width: 720px; margin: auto; margin: auto; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;">
+    <div style="width: 460px; padding-top: 160px; margin-left: 310px;">
+<img id="sun_image11" src="/resource/community-theme/images/login-product_name_open.png;jsessionid=e96be6ba9f77905f8e0b4e7df1b8" alt="Payara Server Open Source Edition" height="42" width="329" border="0" />
+        <form method="POST" class="form" name="loginform" action="j_security_check">
+        <table role="presentation">
+        <tr>
+            <td><label for="Login.username" style="font-weight: bold;">User Name:</label></td>
+            <td><input type="text" name="j_username" id="Login.username" tabindex="1" value="admin"></td>
+        </tr>
+        <tr>
+            <td><label for="Login.password" style="font-weight: bold;">Password:</label>
+            <td><input type="password" name="j_password" id="Login.password" tabindex="2">
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" class="Btn1"
+                    value="Login"
+                    title="Log In to Payara Administration Console" tabindex="3"
+                    onmouseover="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    onmouseout="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onblur="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onfocus="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    name="loginButton" id="loginButton">
+        	    <input type="hidden" name="loginButton.DisabledHiddenField" value="true" />
+    	    </td>
+	    </tr>
+	    </table>
+        </form>
+    </div>
+</div>
+
+            <script type="text/javascript">
+                if (true) {
+                    //submitAndDisable(document.getElementById('loginButton'), 'Login');
+                    document.getElementById('loginButton').form.submit();
+                    //document.getElementById('loginButton').form.autocomplete="off";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="footer"
+        style="color: #fff;">
+        <div id="copyright" style="width: 720px; margin-left: auto; margin-right: auto; padding: 5px; text-align: center">
+            <span>Copyright .. 2005, 2014, Oracle and/or its affiliates. Payara Portions Copyright .. 2016 Payara Foundation. All rights reserved. Payara and Payara Server are trademarks of Payara Foundation.  Oracle and Java are registered trademarks of Oracle and/or its  affiliates. Other names may be trademarks of their respective owners.</span>
+        </div>
+    </div>
+    <script src="/resource/js/cj.js"></script>
+</body>
+</html>
+
+18:28:45.436005 IP localhost.39032 > localhost.appserv-http: Flags [.], ack 4915, win 488, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..4Iy@.@..H.........x......Q........(.....
+.,X..,X.
+18:28:45.436064 IP localhost.39032 > localhost.appserv-http: Flags [R.], seq 17, ack 4915, win 512, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..4Iz@.@..G.........x......Q........(.....
+.,X..,X.
+18:28:45.436358 IP localhost.39030 > localhost.appserv-http: Flags [F.], seq 239, ack 1321, win 512, options [nop,nop,TS val 3593230587 ecr 3593224567], length 0
+E..4|H@.@..y.........v...@}..K.......(.....
+.,X..,Aw
+18:28:45.436477 IP localhost.appserv-http > localhost.39030: Flags [F.], seq 1321, ack 240, win 512, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..46&@.@..............v.K...@}......(.....
+.,X..,X.
+18:28:45.436491 IP localhost.39030 > localhost.appserv-http: Flags [.], ack 1322, win 512, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..4|I@.@..x.........v...@}..K.......(.....
+.,X..,X.
+18:28:45.436557 IP localhost.39036 > localhost.appserv-http: Flags [S], seq 429953972, win 65495, options [mss 65495,sackOK,TS val 3593230587 ecr 0,nop,wscale 7], length 0
+E..<..@.@.j..........|...............0.........
+.,X.........
+18:28:45.436564 IP localhost.appserv-http > localhost.39036: Flags [S.], seq 1629112717, ack 429953973, win 65483, options [mss 65495,sackOK,TS val 3593230587 ecr 3593230587,nop,wscale 7], length 0
+E..<..@.@.<............|a.I..........0.........
+.,X..,X.....
+18:28:45.436569 IP localhost.39036 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..4..@.@.j..........|......a.I......(.....
+.,X..,X.
+18:28:45.436721 IP localhost.39036 > localhost.appserv-http: Flags [P.], seq 1:239, ack 1, win 512, options [nop,nop,TS val 3593230587 ecr 3593230587], length 238
+E.."..@.@.i..........|......a.I............
+.,X..,X.GET /__asadmin/__locations HTTP/1.1
+Content-Type: image/png
+User-Agent: hk2-agent
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+
+
+18:28:45.436726 IP localhost.appserv-http > localhost.39036: Flags [.], ack 239, win 510, options [nop,nop,TS val 3593230587 ecr 3593230587], length 0
+E..4.-@.@..............|a.I..........(.....
+.,X..,X.
+18:28:45.438211 IP localhost.appserv-http > localhost.39036: Flags [P.], seq 1:1316, ack 239, win 512, options [nop,nop,TS val 3593230589 ecr 3593230587], length 1315
+E..W..@.@..p...........|a.I..........L.....
+.,X..,X.HTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: text/html
+Date: Sat, 18 Dec 2021 17:28:45 GMT
+Transfer-Encoding: chunked
+X-Frame-Options: SAMEORIGIN
+
+3fe
+Signature-Version: 1.0
+Restart-Required_value: false
+Base-Root_name: Base-Root
+use-main-children-attribute: false
+Restart-Required_name: Restart-Required
+keys: Config-Dir;Instance-Root;Domain-Root;Uptime;Base-Root;Restart-Re
+ quired;Pid
+Config-Dir_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/P
+ ayara_4.1.2.181/glassfish/domains/payaradomain/config
+Domain-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/
+ Payara_4.1.2.181/glassfish/domains/payaradomain
+exit-code: SUCCESS
+message: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Payara_4.1
+ .2.181/glassfish/domains/payaradomain
+Uptime_value: 214770
+Instance-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratori
+ a/Payara_4.1.2.181/glassfish/domains/payaradomain
+Uptime_name: Uptime
+Instance-Root_name: Instance-Root
+Domain-Root_name: Domain-Root
+Pid_value: 42249
+Pid_name: Pid
+Base-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Pa
+ yara_4.1.2.181/glassfish
+Config-Dir_name: Config-Dir
+
+
+
+18:28:45.438218 IP localhost.39036 > localhost.appserv-http: Flags [.], ack 1316, win 502, options [nop,nop,TS val 3593230589 ecr 3593230589], length 0
+E..4..@.@.j..........|......a.N......(.....
+.,X..,X.
+18:28:45.438282 IP localhost.appserv-http > localhost.39036: Flags [P.], seq 1316:1321, ack 239, win 512, options [nop,nop,TS val 3593230589 ecr 3593230589], length 5
+E..9./@.@..............|a.N..........-.....
+.,X..,X.0
+
+
+18:28:45.438285 IP localhost.39036 > localhost.appserv-http: Flags [.], ack 1321, win 507, options [nop,nop,TS val 3593230589 ecr 3593230589], length 0
+E..4..@.@.j..........|......a.N......(.....
+.,X..,X.
+18:28:51.439095 IP localhost.39038 > localhost.appserv-http: Flags [S], seq 2031164080, win 65495, options [mss 65495,sackOK,TS val 3593236590 ecr 0,nop,wscale 7], length 0
+E..<..@.@............~..y............0.........
+.,pn........
+18:28:51.439110 IP localhost.appserv-http > localhost.39038: Flags [S.], seq 2362819206, ack 2031164081, win 65483, options [mss 65495,sackOK,TS val 3593236590 ecr 3593236590,nop,wscale 7], length 0
+E..<..@.@.<............~....y........0.........
+.,pn.,pn....
+18:28:51.439119 IP localhost.39038 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593236590 ecr 3593236590], length 0
+E..4. @.@............~..y............(.....
+.,pn.,pn
+18:28:51.439215 IP localhost.39038 > localhost.appserv-http: Flags [P.], seq 1:17, ack 1, win 512, options [nop,nop,TS val 3593236590 ecr 3593236590], length 16
+E..D.!@.@............~..y............8.....
+.,pn.,pnGET / HTTP/1.0
+
+
+18:28:51.439220 IP localhost.appserv-http > localhost.39038: Flags [.], ack 17, win 512, options [nop,nop,TS val 3593236590 ecr 3593236590], length 0
+E..4G.@.@..............~....y........(.....
+.,pn.,pn
+18:28:51.443014 IP localhost.39034 > localhost.appserv-http: Flags [F.], seq 285, ack 571, win 512, options [nop,nop,TS val 3593236594 ecr 3593230579], length 0
+E..4..@.@............z..fI.....v.....(.....
+.,pr.,X.
+18:28:51.443137 IP localhost.39040 > localhost.appserv-http: Flags [S], seq 533807480, win 65495, options [mss 65495,sackOK,TS val 3593236594 ecr 0,nop,wscale 7], length 0
+E..<..@.@.u...............Ax.........0.........
+.,pr........
+18:28:51.443150 IP localhost.appserv-http > localhost.39040: Flags [S.], seq 2223525891, ack 533807481, win 65483, options [mss 65495,sackOK,TS val 3593236594 ecr 3593236594,nop,wscale 7], length 0
+E..<..@.@.<...............P...Ay.....0.........
+.,pr.,pr....
+18:28:51.443161 IP localhost.39040 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593236594 ecr 3593236594], length 0
+E..4..@.@.u...............Ay..P......(.....
+.,pr.,pr
+18:28:51.443183 IP localhost.appserv-http > localhost.39034: Flags [F.], seq 571, ack 286, win 512, options [nop,nop,TS val 3593236594 ecr 3593236594], length 0
+E..4..@.@.:............z...vfI.......(.....
+.,pr.,pr
+18:28:51.443197 IP localhost.39034 > localhost.appserv-http: Flags [.], ack 572, win 512, options [nop,nop,TS val 3593236594 ecr 3593236594], length 0
+E..4..@.@............z..fI.....w.....(.....
+.,pr.,pr
+18:28:51.443274 IP localhost.39040 > localhost.appserv-http: Flags [P.], seq 1:285, ack 1, win 512, options [nop,nop,TS val 3593236594 ecr 3593236594], length 284
+E..P..@.@.t...............Ay..P......D.....
+.,pr.,prGET /management/domain/anonymous-user-enabled HTTP/1.1
+Accept: application/json
+Cookie: $Version=1;gfresttoken=
+X-GlassFish-3: true
+User-Agent: Jersey/2.25.1 (HttpUrlConnection 1.8.0_292)
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Connection: keep-alive
+
+
+18:28:51.443279 IP localhost.appserv-http > localhost.39040: Flags [.], ack 285, win 510, options [nop,nop,TS val 3593236594 ecr 3593236594], length 0
+E..4.X@.@..i..............P...B......(.....
+.,pr.,pr
+18:28:51.447575 IP localhost.appserv-http > localhost.39040: Flags [P.], seq 1:571, ack 285, win 512, options [nop,nop,TS val 3593236598 ecr 3593236594], length 570
+E..n.Y@.@.................P...B......c.....
+.,pv.,prHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:51 GMT
+Content-Length: 270
+X-Frame-Options: SAMEORIGIN
+
+{"message":"The anonymous user is enabled: admin","command":"__anonymous-user-enabled AdminCommand","exit_code":"SUCCESS","extraProperties":{"anonymousUserEnabled":true,"methods":[{"name":"GET"},{}],"anonymousUserName":"admin","commandLog":["__anonymous-user-enabled"]}}
+18:28:51.447586 IP localhost.39040 > localhost.appserv-http: Flags [.], ack 571, win 508, options [nop,nop,TS val 3593236598 ecr 3593236598], length 0
+E..4..@.@.u...............B...R>.....(.....
+.,pv.,pv
+18:28:51.454450 IP localhost.appserv-http > localhost.39038: Flags [P.], seq 1:4915, ack 17, win 512, options [nop,nop,TS val 3593236605 ecr 3593236590], length 4914
+E..fG.@.@..............~....y........[.....
+.,p}.,pnHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Set-Cookie: JSESSIONID=e96d5f0da8840bd95529c3c9f572; Path=/; HttpOnly
+Content-Type: text/html;charset=UTF-8
+Date: Sat, 18 Dec 2021 17:28:51 GMT
+Connection: close
+X-Frame-Options: SAMEORIGIN
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Login</title>
+<script type="text/javascript">
+<!-- FIXME: add code to ensure we're the top-most frame -->
+    if (document.getElementById('layout-doc') != null) {
+        // Just refresh the page... login will take over
+        window.location = window.location;
+    }
+</script>
+    <style type="text/css">
+        /* clickjacking defense */
+        body { display : none; }
+    </style>
+<link rel="stylesheet" type="text/css" href="/theme/com/sun/webui/jsf/suntheme/css/css_master.css" />
+<script type="text/javascript">
+djConfig={
+    "isDebug": false,
+    "debugAtAllCosts": false,
+    "parseWidgets": false
+};
+</script>
+<script type="text/javascript" src="/theme/META-INF/dojo/dojo.js"></script>
+<script type="text/javascript" src="/theme/META-INF/json/json.js"></script>
+<script type="text/javascript" src="/theme/META-INF/prototype/prototype.js"></script>
+<script type="text/javascript" src="/theme/META-INF/com_sun_faces_ajax.js"></script>
+<script type="text/javascript">
+dojo.hostenv.setModulePrefix("webui.suntheme", "/theme/com/sun/webui/jsf/suntheme/javascript");
+dojo.require('webui.suntheme.*');
+</script>
+<link id="sun_link5" rel="stylesheet" type="text/css" href="/resource/css/css_ns6up.css" />
+
+</head>
+
+<body id="body3" class="LogBdy" focus="loginform.j_username" style="background-color: #4A5C6A;">
+    <div id="header"class="LogTopBnd" style="height: 30px;"></div>
+    <div class="middle">
+        <div class="plugincontent" style="width1: 1px; visibility: hidden;">
+
+<div style="height: 435px;background: #ffffff url(/resource/community-theme/images/login-backimage-open.png);
+    background-repeat:no-repeat;background-position:left top; width: 720px; margin: auto; margin: auto; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;">
+    <div style="width: 460px; padding-top: 160px; margin-left: 310px;">
+<img id="sun_image11" src="/resource/community-theme/images/login-product_name_open.png;jsessionid=e96d5f0da8840bd95529c3c9f572" alt="Payara Server Open Source Edition" height="42" width="329" border="0" />
+        <form method="POST" class="form" name="loginform" action="j_security_check">
+        <table role="presentation">
+        <tr>
+            <td><label for="Login.username" style="font-weight: bold;">User Name:</label></td>
+            <td><input type="text" name="j_username" id="Login.username" tabindex="1" value="admin"></td>
+        </tr>
+        <tr>
+            <td><label for="Login.password" style="font-weight: bold;">Password:</label>
+            <td><input type="password" name="j_password" id="Login.password" tabindex="2">
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" class="Btn1"
+                    value="Login"
+                    title="Log In to Payara Administration Console" tabindex="3"
+                    onmouseover="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    onmouseout="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onblur="javascript: if (this.disabled==0) this.className='Btn1'"
+                    onfocus="javascript: if (this.disabled==0) this.className='Btn1Hov'"
+                    name="loginButton" id="loginButton">
+        	    <input type="hidden" name="loginButton.DisabledHiddenField" value="true" />
+    	    </td>
+	    </tr>
+	    </table>
+        </form>
+    </div>
+</div>
+
+            <script type="text/javascript">
+                if (true) {
+                    //submitAndDisable(document.getElementById('loginButton'), 'Login');
+                    document.getElementById('loginButton').form.submit();
+                    //document.getElementById('loginButton').form.autocomplete="off";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="footer"
+        style="color: #fff;">
+        <div id="copyright" style="width: 720px; margin-left: auto; margin-right: auto; padding: 5px; text-align: center">
+            <span>Copyright .. 2005, 2014, Oracle and/or its affiliates. Payara Portions Copyright .. 2016 Payara Foundation. All rights reserved. Payara and Payara Server are trademarks of Payara Foundation.  Oracle and Java are registered trademarks of Oracle and/or its  affiliates. Other names may be trademarks of their respective owners.</span>
+        </div>
+    </div>
+    <script src="/resource/js/cj.js"></script>
+</body>
+</html>
+
+18:28:51.454465 IP localhost.39038 > localhost.appserv-http: Flags [.], ack 4915, win 488, options [nop,nop,TS val 3593236605 ecr 3593236605], length 0
+E..4."@.@............~..y............(.....
+.,p}.,p}
+18:28:51.454521 IP localhost.39038 > localhost.appserv-http: Flags [R.], seq 17, ack 4915, win 512, options [nop,nop,TS val 3593236605 ecr 3593236605], length 0
+E..4.#@.@............~..y............(.....
+.,p}.,p}
+18:28:51.454725 IP localhost.39036 > localhost.appserv-http: Flags [F.], seq 239, ack 1321, win 512, options [nop,nop,TS val 3593236605 ecr 3593230589], length 0
+E..4..@.@.j..........|......a.N......(.....
+.,p}.,X.
+18:28:51.455011 IP localhost.39042 > localhost.appserv-http: Flags [S], seq 2602327885, win 65495, options [mss 65495,sackOK,TS val 3593236606 ecr 0,nop,wscale 7], length 0
+E..<..@.@..8.............._M.........0.........
+.,p~........
+18:28:51.455020 IP localhost.appserv-http > localhost.39042: Flags [S.], seq 814753615, ack 2602327886, win 65483, options [mss 65495,sackOK,TS val 3593236606 ecr 3593236606,nop,wscale 7], length 0
+E..<..@.@.<.............0.'O.._N.....0.........
+.,p~.,p~....
+18:28:51.455027 IP localhost.39042 > localhost.appserv-http: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593236606 ecr 3593236606], length 0
+E..4..@.@..?.............._N0.'P.....(.....
+.,p~.,p~
+18:28:51.455057 IP localhost.appserv-http > localhost.39036: Flags [F.], seq 1321, ack 240, win 512, options [nop,nop,TS val 3593236606 ecr 3593236605], length 0
+E..4.0@.@..............|a.N..........(.....
+.,p~.,p}
+18:28:51.455067 IP localhost.39036 > localhost.appserv-http: Flags [.], ack 1322, win 512, options [nop,nop,TS val 3593236606 ecr 3593236606], length 0
+E..4..@.@.j..........|......a.N......(.....
+.,p~.,p~
+18:28:51.455167 IP localhost.39042 > localhost.appserv-http: Flags [P.], seq 1:239, ack 1, win 512, options [nop,nop,TS val 3593236606 ecr 3593236606], length 238
+E.."..@.@..P.............._N0.'P...........
+.,p~.,p~GET /__asadmin/__locations HTTP/1.1
+Content-Type: image/png
+User-Agent: hk2-agent
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:4848
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+
+
+18:28:51.455172 IP localhost.appserv-http > localhost.39042: Flags [.], ack 239, win 510, options [nop,nop,TS val 3593236606 ecr 3593236606], length 0
+E..47.@.@...............0.'P..`<.....(.....
+.,p~.,p~
+18:28:51.456860 IP localhost.appserv-http > localhost.39042: Flags [P.], seq 1:1316, ack 239, win 512, options [nop,nop,TS val 3593236607 ecr 3593236606], length 1315
+E..W7.@.@...............0.'P..`<.....L.....
+.,p..,p~HTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: text/html
+Date: Sat, 18 Dec 2021 17:28:51 GMT
+Transfer-Encoding: chunked
+X-Frame-Options: SAMEORIGIN
+
+3fe
+Signature-Version: 1.0
+Restart-Required_value: false
+Base-Root_name: Base-Root
+use-main-children-attribute: false
+Restart-Required_name: Restart-Required
+keys: Config-Dir;Instance-Root;Domain-Root;Uptime;Base-Root;Restart-Re
+ quired;Pid
+Config-Dir_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/P
+ ayara_4.1.2.181/glassfish/domains/payaradomain/config
+Domain-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/
+ Payara_4.1.2.181/glassfish/domains/payaradomain
+exit-code: SUCCESS
+message: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Payara_4.1
+ .2.181/glassfish/domains/payaradomain
+Uptime_value: 220789
+Instance-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratori
+ a/Payara_4.1.2.181/glassfish/domains/payaradomain
+Uptime_name: Uptime
+Instance-Root_name: Instance-Root
+Domain-Root_name: Domain-Root
+Pid_value: 42249
+Pid_name: Pid
+Base-Root_value: /home/pyro/Documents/AD/Lab/Practicas/Exploratoria/Pa
+ yara_4.1.2.181/glassfish
+Config-Dir_name: Config-Dir
+
+
+
+18:28:51.456869 IP localhost.39042 > localhost.appserv-http: Flags [.], ack 1316, win 502, options [nop,nop,TS val 3593236607 ecr 3593236607], length 0
+E..4..@.@..=..............`<0.,s.....(.....
+.,p..,p.
+18:28:51.456958 IP localhost.appserv-http > localhost.39042: Flags [P.], seq 1316:1321, ack 239, win 512, options [nop,nop,TS val 3593236607 ecr 3593236607], length 5
+E..97.@.@...............0.,s..`<.....-.....
+.,p..,p.0
+
+
+18:28:51.456963 IP localhost.39042 > localhost.appserv-http: Flags [.], ack 1321, win 507, options [nop,nop,TS val 3593236607 ecr 3593236607], length 0
+E..4..@.@..<..............`<0.,x.....(.....
+.,p..,p.
+18:28:52.702488 IP localhost.36122 > localhost.intermapper: Flags [S], seq 2599373780, win 65495, options [mss 65495,sackOK,TS val 3593237853 ecr 0,nop,wscale 7], length 0
+E..<rC@.@..v..............K..........0.........
+.,u]........
+18:28:52.702503 IP localhost.intermapper > localhost.36122: Flags [S.], seq 1859821130, ack 2599373781, win 65483, options [mss 65495,sackOK,TS val 3593237853 ecr 3593237853,nop,wscale 7], length 0
+E..<..@.@.<.............n..J..K......0.........
+.,u].,u]....
+18:28:52.702514 IP localhost.36122 > localhost.intermapper: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593237853 ecr 3593237853], length 0
+E..4rD@.@..}..............K.n..K.....(.....
+.,u].,u]
+18:28:52.703992 IP localhost.36122 > localhost.intermapper: Flags [P.], seq 1:518, ack 1, win 512, options [nop,nop,TS val 3593237855 ecr 3593237853], length 517
+E..9rE@.@..w..............K.n..K...........
+.,u_.,u]............1g8....*t..^.c.c..qA6.tn.#c/.hp ..}......U....,.4..;|.|.^.>...3..$.......+./.....,.0.
+.	........./.5.
+............	localhost..........
+.......................#.........h2.http/1.1..........".
+...........3.k.i... ....i.'..y.A..P.Y....!.A......-....A.Tk1..uZ....=./2#...n.B.[.+..?.l..m....X+*..g..5u.u..w.8...q....:.+.	......................................-........@............................................................................................................................................
+18:28:52.704000 IP localhost.intermapper > localhost.36122: Flags [.], ack 518, win 508, options [nop,nop,TS val 3593237855 ecr 3593237855], length 0
+E..4.N@.@.Ss............n..K..M......(.....
+.,u_.,u_
+18:28:52.709091 IP localhost.intermapper > localhost.36122: Flags [P.], seq 1:1367, ack 518, win 512, options [nop,nop,TS val 3593237860 ecr 3593237855], length 1366
+E....O@.@.N.............n..K..M............
+.,ud.,u_....Q...Q......,.Q&*b/.....2..7......I$.Z.. 4.......\....4W>|`oi:y)$......n../..	...................0...0..........R..c0..	*.H........0.1.0	..U....UK1.0...U....Worcestershire1.0...U....Great Malvern1.0...U.
+..Payara Foundation1.0...U....Payara1.0...U...	localhost0...180206132649Z..280204132649Z0.1.0	..U....UK1.0...U....Worcestershire1.0...U....Great Malvern1.0...U.
+..Payara Foundation1.0...U....Payara1.0...U...	localhost0.."0..	*.H.............0..
+......[..hm...B........kaN.s>..x]..e..6]...../gu.,.lOsR.;...2...<.%....y.....F3.W..U././.d).NP..t..[.+.Q..dI.l.c.....o.....Z..3.=....l.."...W..K.........M..j6C.J......#..>I.j...Hk.75..q3$l..KUuw+..G.&..".....b=)....e....F.u..*.%....P^a..0.&\....!~.....(?.V.G2........!0.0...U......~ ...n..+....>.....+0..	*.H.............'....Q...Zv.aI..G.0.... 1...?......A...q... .F].+......1.t..  ...@..u...7y...p.....P.@x..,.4.9.U..}.....Z......K\&I.....; .id......n2..:1....?....... ..|F].H..Q.....>7.u..48w:......|...Nq.......o..K.....X...8..NU...z...>./l_!i<...7%...uws.K.4..$..w.^.........I...A.....r.v.w.C}1........PK..y.BSV...
+...(-.}..r...$.R}Y...sr~u.w.............&.i..3..<z.<.`....r..m.2.O.}n%.....\8.....L.#...Jy,.....^.\..*Jp.x.W....ODn..<..O(.F....rm..u....]...DU.......\.P..."7..>.\.G..>. ... .X..u!........Z.;^.^;e.	..g.e.!..}..}..0..2k........YZ..An.......Q.."k....r.KO'-.x..B.>....J(.7:..r.)%5..}..\c.K.-......
+18:28:52.709100 IP localhost.36122 > localhost.intermapper: Flags [.], ack 1367, win 502, options [nop,nop,TS val 3593237860 ecr 3593237860], length 0
+E..4rF@.@..{..............M.n........(.....
+.,ud.,ud
+18:28:52.711258 IP localhost.36122 > localhost.intermapper: Flags [P.], seq 518:644, ack 1367, win 512, options [nop,nop,TS val 3593237862 ecr 3593237860], length 126
+E...rG@.@.................M.n..............
+.,uf.,ud....F...BA....i...d^....R..*....C.T....,.f%..?Rl.@...3
+2D..1@-%...,}v...2............(........,......@#c^...pH....{9.Y}....U.]
+18:28:52.711264 IP localhost.intermapper > localhost.36122: Flags [.], ack 644, win 512, options [nop,nop,TS val 3593237862 ecr 3593237862], length 0
+E..4.P@.@.Sq............n.....NX.....(.....
+.,uf.,uf
+18:28:52.714234 IP localhost.intermapper > localhost.36122: Flags [P.], seq 1367:1418, ack 644, win 512, options [nop,nop,TS val 3593237865 ecr 3593237862], length 51
+E..g.Q@.@.S=............n.....NX.....[.....
+.,ui.,uf..........(.........>.2..`.;.....,."..N..w.......r.
+18:28:52.714242 IP localhost.36122 > localhost.intermapper: Flags [.], ack 1418, win 512, options [nop,nop,TS val 3593237865 ecr 3593237865], length 0
+E..4rH@.@..y..............NXn........(.....
+.,ui.,ui
+18:28:52.714383 IP localhost.36122 > localhost.intermapper: Flags [P.], seq 644:1554, ack 1418, win 512, options [nop,nop,TS val 3593237865 ecr 3593237865], length 910
+E...rI@.@.................NXn..............
+.,ui.,ui................*{c...tR".f.E.(....
+r^.1..U....u1.Z)nwj.\-....I....h......m..!.c...$.MGH.......4.2..(....*Hm...W)l....4...KPX?..3.v.@[o.e.|...cs..o..).>\9...`Q.!.+.'.;.F7A.......(....I.]...Q.
+.w5.../6.y.j_.+r......D..B 1...F.b..D3...O..}......8;Iw./.....X;.m..*...V..... y...ZL.V..j..L?.{.@....i.../........n.....x`t...:.~F.....P..g..... B...
+'...s.#x...T?1ol...@X$..@Y...D.l.,Ba;,....t.....=..yC....ij.#.C..I.2.........S.4..R.O}.O.lct.."T..r(.*y@\.t ?...\.............W.x.NI|.J...)...m..."......0Q.m......y...S2..........'vj%..>...T!*.(`w..0A...3..D..Pq(.t..d....9...r......q.T...i>.r.c'.og3.{.[2a..i..2...<......!.. w.w.Q...&.r..N0...M.2..J....O..`].3...%.
+.1..E1..co.......'..(..0....P).....Y.$..C...J$8r....e....9..P..=.\..+S:......~....8...$.y.........K....	d6!..h:=m...qh.....+.........Y..K..\.....7D.'./.}....]......A.H..s.w.....1D.6.H.f5%I.(1U1t.+A..%]l_....F..`..,(.....'..&.n..g.iOB.....B.Cv...d.5l..
+18:28:52.714390 IP localhost.intermapper > localhost.36122: Flags [.], ack 1554, win 505, options [nop,nop,TS val 3593237865 ecr 3593237865], length 0
+E..4.R@.@.So............n.....Q......(.....
+.,ui.,ui
+18:28:52.728049 IP localhost.56596 > localhost.http-alt: Flags [S], seq 4025149948, win 65495, options [mss 65495,sackOK,TS val 3593237879 ecr 0,nop,wscale 7], length 0
+E..<..@.@............................0.........
+.,uw........
+18:28:52.728065 IP localhost.http-alt > localhost.56596: Flags [S.], seq 2342130721, ack 4025149949, win 65483, options [mss 65495,sackOK,TS val 3593237879 ecr 3593237879,nop,wscale 7], length 0
+E..<..@.@.<................!.........0.........
+.,uw.,uw....
+18:28:52.728079 IP localhost.56596 > localhost.http-alt: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593237879 ecr 3593237879], length 0
+E..4..@.@......................".....(.....
+.,uw.,uw
+18:28:52.728247 IP localhost.56596 > localhost.http-alt: Flags [P.], seq 1:312, ack 1, win 512, options [nop,nop,TS val 3593237879 ecr 3593237879], length 311: HTTP: POST /Practica05_WS_SoapRest/resources/rest/valid_account HTTP/1.1
+E..k..@.@..q..................."....._.....
+.,uw.,uwPOST /Practica05_WS_SoapRest/resources/rest/valid_account HTTP/1.1
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Jersey/2.25.1 (HttpUrlConnection 1.8.0_292)
+Cache-Control: no-cache
+Pragma: no-cache
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 27
+
+
+18:28:52.728254 IP localhost.http-alt > localhost.56596: Flags [.], ack 312, win 510, options [nop,nop,TS val 3593237879 ecr 3593237879], length 0
+E..4^.@.@.................."...4.....(.....
+.,uw.,uw
+18:28:52.728264 IP localhost.56596 > localhost.http-alt: Flags [P.], seq 312:339, ack 1, win 512, options [nop,nop,TS val 3593237879 ecr 3593237879], length 27: HTTP
+E..O..@.@..................4...".....C.....
+.,uw.,uwpass=HOLAHOLAHOLA&user=alex
+18:28:52.728268 IP localhost.http-alt > localhost.56596: Flags [.], ack 339, win 510, options [nop,nop,TS val 3593237879 ecr 3593237879], length 0
+E..4^.@.@.................."...O.....(.....
+.,uw.,uw
+18:28:52.730186 IP localhost.54768 > localhost.tlisrv: Flags [S], seq 197558818, win 65495, options [mss 65495,sackOK,TS val 3593237881 ecr 0,nop,wscale 7], length 0
+E..<..@.@..................".........0.........
+.,uy........
+18:28:52.730209 IP localhost.tlisrv > localhost.54768: Flags [S.], seq 4281658782, ack 197558819, win 65483, options [mss 65495,sackOK,TS val 3593237881 ecr 3593237881,nop,wscale 7], length 0
+E..<..@.@.<..............4.....#.....0.........
+.,uy.,uy....
+18:28:52.730225 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 1, win 512, options [nop,nop,TS val 3593237881 ecr 3593237881], length 0
+E..4..@.@..................#.4.......(.....
+.,uy.,uy
+18:28:52.730422 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 1:178, ack 1, win 512, options [nop,nop,TS val 3593237881 ecr 3593237881], length 177
+E.....@.@..*...............#.4.............
+.,uy.,uy...A.....A.0.^............`......`....zz....`........`.M.].	.m......".Z........a..K..K.K.@`@M.......]........$...$....@.........G......a....&..... .m........!....@@@@@@@@@@@@@@@
+18:28:52.730438 IP localhost.tlisrv > localhost.54768: Flags [.], ack 178, win 511, options [nop,nop,TS val 3593237881 ecr 3593237881], length 0
+E..4..@.@.~..............4...........(.....
+.,uy.,uy
+18:28:52.730810 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 1:154, ack 178, win 512, options [nop,nop,TS val 3593237881 ecr 3593237881], length 153
+E.....@.@.}..............4.................
+.,uy.,uy...B.....C...^....................@............$...$....@.........G......@........m.....................".Z........a..K..K.K.@`@M.......].......
+........
+18:28:52.730821 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 154, win 511, options [nop,nop,TS val 3593237881 ecr 3593237881], length 0
+E..4..@.@....................4.8.....(.....
+.,uy.,uy
+18:28:52.730954 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 178:398, ack 154, win 512, options [nop,nop,TS val 3593237881 ecr 3593237881], length 220
+E.....@.@....................4.8...........
+.,uy.,uy.4.A.....n........!.pr2               ....pr2....pr2........ ...!.pr2               ..!.$.....DNC10100.<!.7...........@@@@@@@@@@@@@@@............`......`@@@@@@@@..../QTDSQLASC..!5..............}.......5..................
+18:28:52.730960 IP localhost.tlisrv > localhost.54768: Flags [.], ack 398, win 511, options [nop,nop,TS val 3593237881 ecr 3593237881], length 0
+E..4..@.@.~..............4.8.........(.....
+.,uy.,uy
+18:28:52.733157 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 154:254, ack 398, win 512, options [nop,nop,TS val 3593237884 ecr 3593237881], length 100
+E.....@.@.}..............4.8...............
+.,u|.,uy...B.........I........9.R...3"....I......CSS10140.../QTDSQLASC...5...............................PR2
+18:28:52.733167 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 254, win 512, options [nop,nop,TS val 3593237884 ecr 3593237884], length 0
+E..4..@.@....................4.......(.....
+.,u|.,u|
+18:28:52.733369 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 398:671, ack 254, win 512, options [nop,nop,TS val 3593237884 ecr 3593237884], length 273
+E..E..@.@....................4.......9.....
+.,u|.,u|.X.Q...R ..D!.pr2               NULLID            SYSLH000          SYSLVL01....!....!F....S....$P....
+WITH HOLD ..L.C...F$.....<SELECT * FROM usuarios WHERE id_usuario = ? AND password = ?..S.....M ..D!.pr2               NULLID            SYSLH000          SYSLVL01....!F.
+18:28:52.733375 IP localhost.tlisrv > localhost.54768: Flags [.], ack 671, win 510, options [nop,nop,TS val 3593237884 ecr 3593237884], length 0
+E..4..@.@.~..............4...........(.....
+.,u|.,u|
+18:28:52.733669 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 254:732, ack 671, win 512, options [nop,nop,TS val 3593237884 ecr 3593237884], length 478
+E.....@.@.|8.............4.................
+.,u|.,u|...C....$......     CSS10140.........................           ................................................
+ID_USUARIO............................USUARIOS....PR2...
+ID_USUARIO.......................PASSWORD............................USUARIOS....PR2....PASSWORD..........$......     CSS10140.........................           ..................................................................................................................................................
+18:28:52.733677 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 732, win 509, options [nop,nop,TS val 3593237884 ecr 3593237884], length 0
+E..4..@.@....................4.z.....(.....
+.,u|.,u|
+18:28:52.733883 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 671:818, ack 732, win 512, options [nop,nop,TS val 3593237884 ecr 3593237884], length 147
+E.....@.@..B.................4.z...........
+.,u|.,u|.[.Q...U ..D!.pr2               NULLID            SYSLH000          SYSLVL01....!.......!]..8.....2$.....	v.A..A...q.......z....alex...HOLAHOLAHOLA
+18:28:52.733889 IP localhost.tlisrv > localhost.54768: Flags [.], ack 818, win 511, options [nop,nop,TS val 3593237884 ecr 3593237884], length 0
+E..4..@.@.~..............4.z...T.....(.....
+.,u|.,u|
+18:28:52.734263 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 732:882, ack 818, win 512, options [nop,nop,TS val 3593237885 ecr 3593237884], length 150
+E.....@.@.}~.............4.z...T...........
+.,u}.,u|.,.R...&"....I....!.$...!....![..........!P..".S....$.	v.2..3..	q.T......q.....H.....B$.....d02000CSS10140.........................           ........
+18:28:52.734269 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 882, win 511, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@..................T.4.......(.....
+.,u}.,u}
+18:28:52.734368 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 818:828, ack 882, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 10
+E..>..@.@..................T.4.......2.....
+.,u}.,u}.
+...... .
+18:28:52.734376 IP localhost.tlisrv > localhost.54768: Flags [.], ack 828, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@.~..............4.....^.....(.....
+.,u}.,u}
+18:28:52.734429 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 882:974, ack 828, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 92
+E.....@.@.}..............4.....^...........
+.,u}.,u}...R...."....I....!...G.....A$......     CSS10140.........................           .......
+18:28:52.734433 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 974, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@..................^.4.l.....(.....
+.,u}.,u}
+18:28:52.734494 IP localhost.54768 > localhost.tlisrv: Flags [P.], seq 828:838, ack 974, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 10
+E..>..@.@..................^.4.l.....2.....
+.,u}.,u}.
+...... .
+18:28:52.734499 IP localhost.tlisrv > localhost.54768: Flags [.], ack 838, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@.~..............4.l...h.....(.....
+.,u}.,u}
+18:28:52.734548 IP localhost.tlisrv > localhost.54768: Flags [P.], seq 974:1066, ack 838, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 92
+E.....@.@.}..............4.l...h...........
+.,u}.,u}...R...."....I....!...G.....A$......     CSS10140.........................           .......
+18:28:52.734552 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 1066, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@..................h.4.......(.....
+.,u}.,u}
+18:28:52.734610 IP localhost.54768 > localhost.tlisrv: Flags [F.], seq 838, ack 1066, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@..................h.4.......(.....
+.,u}.,u}
+18:28:52.734666 IP localhost.tlisrv > localhost.54768: Flags [F.], seq 1066, ack 839, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@.~..............4.....i.....(.....
+.,u}.,u}
+18:28:52.734676 IP localhost.54768 > localhost.tlisrv: Flags [.], ack 1067, win 512, options [nop,nop,TS val 3593237885 ecr 3593237885], length 0
+E..4..@.@..................i.4.......(.....
+.,u}.,u}
+18:28:52.735231 IP localhost.http-alt > localhost.56596: Flags [P.], seq 1:301, ack 339, win 512, options [nop,nop,TS val 3593237886 ecr 3593237879], length 300: HTTP: HTTP/1.1 200 OK
+E..`^.@.@.................."...O.....T.....
+.,u~.,uwHTTP/1.1 200 OK
+Server: Payara Server  4.1.2.181 #badassfish
+X-Powered-By: Servlet/3.1 JSP/2.3 (Payara Server  4.1.2.181 #badassfish Java/Oracle Corporation/1.8)
+Content-Type: application/json
+Date: Sat, 18 Dec 2021 17:28:52 GMT
+Content-Length: 15
+X-Frame-Options: SAMEORIGIN
+
+{"valid":false}
+18:28:52.735239 IP localhost.56596 > localhost.http-alt: Flags [.], ack 301, win 510, options [nop,nop,TS val 3593237886 ecr 3593237886], length 0
+E..4..@.@..................O...N.....(.....
+.,u~.,u~
+18:28:52.736905 IP localhost.intermapper > localhost.36122: Flags [P.], seq 1418:2227, ack 1554, win 512, options [nop,nop,TS val 3593237887 ecr 3593237865], length 809
+E..].S@.@.PE............n.....Q......R.....
+.,u..,ui....$...........F..\..`.:.R.;C...@"..I.R...f...L...p...f..........'..J...p.........,....^s.\.,..A.G.....s......cUo........Q..ct.,.lc...0..y.d.....}..e6..]6x.?\5..=..86.P5t...'._..>Z..9...A.......*.j.....s..y..$.%Fo_...1rA..^..T..luJ_W.V....(?Wjl....`......	.......e%...y!.....^.............w.u. ....]f......@...K...nNW=*....VS....}@..us.....I..pL..".,.._.k..}..,...F^B..!...........W.S(J
+........<.D.......	.......xX&..l...Z.i..XOcfV..Z..8..m]A*\%....e0..M.....U.ZC.~.>:.6.1N>[J.S.....}.).4......w....4.8..7..M..".s.....g..:..aQ-jR5.k.N....T.1.....4x......G....g....z...........U.b..CKN..{s?.h+..Ce.....t.1OYA9.......cp}......vg.......]{..J...W.(.........H........N^.ij.R....6.`)..U.m?....	.y..}.tJ..Y...n..WM.$..J>(..l..+.K......}.......D.V...m?.... =9.i....P8.6._.$.p_.Z...<......t.x...5....g....o
+..*RI..}.
+18:28:52.736918 IP localhost.36122 > localhost.intermapper: Flags [.], ack 2227, win 506, options [nop,nop,TS val 3593237887 ecr 3593237887], length 0
+E..4rJ@.@..w..............Q.n........(.....
+.,u..,u.
+18:28:52.737147 IP localhost.intermapper > localhost.36122: Flags [P.], seq 2227:2261, ack 1554, win 512, options [nop,nop,TS val 3593237888 ecr 3593237887], length 34
+E..V.T@.@.SK............n.....Q......J.....
+.,u..,u...............q/..)....o../..]..j.
+18:28:52.737155 IP localhost.36122 > localhost.intermapper: Flags [.], ack 2261, win 507, options [nop,nop,TS val 3593237888 ecr 3593237888], length 0
+E..4rK@.@..v..............Q.n........(.....
+.,u..,u.
+

@@ -1,0 +1,21 @@
+body {
+    background-color:whitesmoke;
+    margin-left: 20px;
+    padding-top: 1em;
+}
+body a:link {
+    color: darkblue;
+}
+body a:visited {
+    color:darkslateblue;
+}
+body a:hover {
+    color:grey;
+}
+body input {
+    margin-bottom:1em;
+}
+
+body h1, h2, h3 {
+    color: midnightblue;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Video Upload Bruh">
+    <meta name="description" content="">
+    <title>VIDCON</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            font-family: "Calibri", Calibri, Arial, sans-serif;
+        }
+        th, td {
+            width: 15%;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #dddddd;
+    }
+    </style>
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+</head>
+<body data-home-page="Home.html" data-home-page-title="Home" data-lang="en">
+    <header>
+        <div>
+        <a href="./Home.html">
+            <img width="480" height="240" src="{{url_for('static', filename='car.png')}}">
+        </a>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h1>Video Upload Bruh</h1>
+            <form method="post" action="/upload" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <input type="submit" value="upload">
+            </form>
+            {% with error = get_flashed_messages() %}
+                {% if error %}
+                    <p><strong>Msg</strong>: {{error}}</p>
+                {% endif %}
+            {% endwith %}
+        </div>
+        <div>
+            <table cellspacing="5" cellpadding="5" id = "transcodes">
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Id</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for file in files %}
+                        <tr>
+                            <td>{{ file.name }}</td>
+                            <td>{{ file.id }}</td>
+                            <td>
+                                {% if file.status == "b'100'%" %}
+                                    <p>{{ file.status }}</p><a href="{{ file.link }}"> Click Here</a>
+                                {% else %}
+                                    <p>{{ file.status }}</p>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>
+        //update status every second
+        //iterate through table rows
+        async function updateStatus() {
+            var table = document.getElementById("transcodes");
+            for (var i = 1, row; row = table.rows[i]; i++) {
+                if (row.cells[2].innerHTML == "100%")
+                    continue
+
+                //fetch updated status 
+                let status = await fetch("http://34.76.212.17:3000/status/" + row.cells[1].innerHTML)
+                row.cells[2].innerHTML = await status.json() + "%"
+            }
+        }
+
+        setInterval(updateStatus, 1000)
+
+    </script>
+</body>

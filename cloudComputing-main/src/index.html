@@ -1,0 +1,76 @@
+ <!-- Html with file input -->
+ <!DOCTYPE html>
+    <html> 
+    <head> 
+        <title > File Upload </title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head> 
+    <body>
+      <form   id="videoForm"    method = "post"   enctype = "multipart/form-data" > 
+        <input   type = "file"   name = "video"   /> 
+        <input   type = "submit"   value = "Upload"   /> 
+        </form> 
+        <h1 id="progress"></h1>
+    </body>
+
+    <script>
+        let id ;
+        $(document).ready(function ()
+            {
+                $("#videoForm").submit(function (e)
+                    {
+                        //Stops submit button from refreshing page.
+                        e.preventDefault();
+        
+                        var form_data = new FormData(this);
+        
+                        $.ajax({
+                            url: '/upload', //location of where you want to send image
+                            dataType: 'text', // what to expect back from the PHP script, if anything
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            data: form_data,
+                            type: 'post',
+                            success: function (response)
+                                {
+                                   id = response;
+                                      console.log(id);
+                                },
+                            error: function ()
+                                {
+                                    alert('failure');
+                                }
+                        });
+                    });
+            });
+
+            // function to get progress every 1 second
+            function getProgress() {
+                if (id == undefined) {
+                    return;
+                }
+                $.ajax({
+                    url: '/status/' + id,
+                    type: 'GET',
+                    success: function (response) {
+                        console.log(response);
+                        $('#progress').html(response + '%');
+                        if(response == 100) {
+                            $('#progress').html('Done');
+                            //remove interval
+                            clearInterval(progressInterval);
+                        }
+                    },
+                    error: function () {
+                        alert('failure');
+                    }
+                });
+            }
+
+            // call getProgress every 1 second
+            const progressInterval = setInterval(getProgress, 1000);
+
+         </script>
+    </html>

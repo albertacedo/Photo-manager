@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Post an image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- TITLE, DESCRIPTION, KEYWORDS, AUTHOR, CREATOR, CAPTURE_DATE, STORAGE_DATE (upload date), FILENAME -->
+        <form action = "do_post_image" method = "POST">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title"><br>
+            
+            <label for="desc">Description</label><br>
+            <input type="text" id="desc" name="desc"><br>
+            
+            <label for="kw">Keywords</label><br>
+            <input type="text" id="kw" name="kw"><br>
+            
+            <label for="user">Author**</label><br>
+            <input type="text" id="user" name="user" required><br>
+            
+            <label for="creator">Creator</label><br>
+            <input type="text" id="creator" name="creator"><br>
+            
+            <label for="cdate">Capture date</label><br>
+            <input type="text" id="cdate" name="cdate"><br>
+            
+            <label for="filename">Filename</label><br>
+            <input type="text" id="filename" name="filename"><br>
+            
+            <input type="submit" value="Post!">
+        </form> 
+    </body>
+</html>
